@@ -111,7 +111,10 @@ card-body > * {
 }
 
 /* raiting */
-.raiting span {
+.rating span {
   color: gold;
   margin: 0.1rem;
+}
+.rating span:last-child{
+  color:rgb(17, 17, 17)
 }
