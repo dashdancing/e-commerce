@@ -163,6 +163,19 @@ card-body > * {
 .success {
   color: rgb(30, 155, 45);
 }
-.error {
+.danger {
   color: darkred;
+}
+.alert {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+.alert-info{
+  color: #2020a2;
+  background-color: snow;
+}
+.alert-danger{
+  color: #c22929;
+  background-color: rgba(180, 18, 18, 0.18);
 }
