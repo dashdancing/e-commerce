@@ -9,7 +9,7 @@ import Rating from '../components/Rating';
 export default function ProductScreen(props) {
 	const dispatch = useDispatch();
 	const productId = props.match.params.id;
-	const [qty, setQty] = useState (1);
+	const [quantity, setQuantity] = useState (1);
 	const productDetails = useSelector((state) => state.productDetails);
 	const {loading, error, product} = productDetails;
 
@@ -17,7 +17,7 @@ export default function ProductScreen(props) {
 		dispatch(detailsProduct(productId));
 	}, [dispatch, productId]);
 	const addToCartHandler = () => {
-		props.history.push(`/cart/${product}?qty=${qty}`);
+		props.history.push(`/cart/${productId}?quantity=${quantity}`);
 	}
 	return (
 		<div>
@@ -72,11 +72,11 @@ export default function ProductScreen(props) {
 									<>
 										<li>
 											<div className="row">
-												<div> Qty </div>				
+												<div> Quantity </div>				
 												<div>							
 													<select 
-														value={qty}
-														onChange={(e) => setQty(e.target.value)}
+														value={quantity}
+														onChange={(e) => setQuantity(e.target.value)}
 														>
 															{[...Array(product.countInStock).keys()].map(
 																(x) => (
@@ -93,7 +93,7 @@ export default function ProductScreen(props) {
 											<button onClick={addToCartHandler} className='primary block'>Add to Cart</button>
 									</li>
 								</>
-                  )}
+            )}
 									</ul>
 								</div>
 							</div>
