@@ -10,10 +10,9 @@ export default function CartScreen(props){
 		useEffect(()=> {
 			if (productId) {
 				dispatch(addToCart(productId, quantity));
-			}
-		}, [dispatch, productId, quantity]);
+            }
+		}, [dispatch, productId, quantity]);  
 		return ( 
-        
         <div>
             <h1>Cart Screen</h1>
             <p>ADD TO CART : ProductID: {productId} Quantity {quantity}</p>

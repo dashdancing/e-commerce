@@ -7,7 +7,7 @@ import ProductScreen from './screens/ProductScreen';
 
 function App() {
 
-  const cart = useSelector(state => state.cart);
+  const cart = useSelector((state) => state.cart);
   const {cartItems} = cart;
 
   return (
@@ -15,7 +15,7 @@ function App() {
       <div className="grid-container">
         <header className="row">
           <div>
-            <Link className="brand" to="index.html">Supreme Store</Link>
+            <Link className="brand" to="/">Supreme Store</Link>
           </div>
           <div>
             <Link to="cart">
