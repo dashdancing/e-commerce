@@ -20,7 +20,7 @@ export default function ProductScreen(props) {
 		props.history.push(`/cart/${productId}?quantity=${quantity}`);
 	}
 	return (
-		<div>
+		<div>     
 			{loading ? (
 				<LoadingBox></LoadingBox>
 			) : error ? (
@@ -52,12 +52,12 @@ export default function ProductScreen(props) {
 					<div className='col-1'>
 						<div className='card card-body'>
 							<ul>
-								<il>
+								<li>
 									<div className='row'>
 										<div>Price</div>
 										<div className='price'>${product.price}</div>
 									</div>
-								</il>
+								</li>
 								<li>
 									<div className='row'>
 										<div>Status</div>

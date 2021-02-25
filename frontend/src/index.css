@@ -98,6 +98,7 @@ button.primary{
 button.block {
   width: 100%;
 }
+/* Header */
 header a {
   color: whitesmoke;
   padding: 1rem;
@@ -108,7 +109,14 @@ a.brand {
   font-size: 3rem;
   font-weight: bold;
 }
-
+.badge{
+  background-color: #c22929;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
